@@ -9,7 +9,7 @@ client.db = require("quick.db");
 client.on("ready", async () => {
   console.log(`Yo boii!! Moderation.V1 has been deployed!! Coded by 365 ɢᴀᴍɪɴɢ ɴ ᴍᴏʀᴇ_2.0#6766`);
   client.user
-    .setActivity(`Discord Tricks`, { type: "LISTENING" })
+    .setActivity(`Moderating in Fontaine`, { type: "LISTENING" })
     .catch(error => console.log(error));
 });
 
@@ -73,7 +73,7 @@ client.on("message", async message => {
   if (command) {
     if (!message.guild.me.hasPermission("ADMINISTRATOR"))
       return message.channel.send(
-        "I Don't Have Enough Permission To Use This Or Any Of My Commands | Require : Administrator"
+        "I Don't Have Enough Permission To Use This Or Any Of My Commands | Required : Administrator"
       );
     command.run(client, message, args);
   }
